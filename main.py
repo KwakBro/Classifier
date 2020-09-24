@@ -13,7 +13,8 @@ path = r'C:\Users\kwak8\PycharmProjects\Temp1\DATA_train\\'
 path_test = r'C:\Users\kwak8\PycharmProjects\Temp1\DATA_test\\'
 path_valid = r'C:\Users\kwak8\PycharmProjects\Temp1\DATA_valid\\'
 
-savepoint = r'C:\Users\kwak8\PycharmProjects\Find_Point'
+# 모델 파일 저장시킬 위치
+savepoint = r'C:\Users\kwak8\PycharmProjects\Version 1.0'
 
 img_w = 60
 img_h = 60
