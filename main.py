@@ -9,12 +9,12 @@ import cv2
 
 categoris = ["door", "empty", "window"]
 
-path = r'C:\Users\kwak8\PycharmProjects\Temp1\DATA_train\\'
-path_test = r'C:\Users\kwak8\PycharmProjects\Temp1\DATA_test\\'
-path_valid = r'C:\Users\kwak8\PycharmProjects\Temp1\DATA_valid\\'
+path = r'DATA_train\\'
+path_test = r'DATA_test\\'
+path_valid = r'DATA_valid\\'
 
 # 모델 파일 저장시킬 위치
-savepoint = r'C:\Users\kwak8\PycharmProjects\Version 1.0'
+savepoint = r'C:\Users\kwak8\PycharmProjects\Version 1.0\RESULT_CALSSIFIRE.h5'
 
 img_w = 60
 img_h = 60
@@ -96,7 +96,7 @@ model.compile(loss=tf.keras.losses.binary_crossentropy,
 model.fit(X, Y, batch_size=20, epochs=15, verbose=2, validation_data=(X_V, Y_V))
 
 model.save('RESULT_CALSSIFIRE.h5')
-model.save(r'C:\Users\kwak8\PycharmProjects\Version 1.0\RESULT_CALSSIFIRE.h5')
+model.save(savepoint)
 model.summary()
 
 name = []
